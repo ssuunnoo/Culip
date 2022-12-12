@@ -158,14 +158,16 @@ const Kor = styled.text`
     line-height: 24px;
 `;
 const Line = styled.hr`
-    width: 100%;
+    width: 211px;
     height: 2px;
     border: none;
     background-color: ${primaryColor};
 
     margin: 0;
     position: absolute;
+    left: 50%;
     bottom: 0%;
+    transform: translateX(-50%);
 `;
 
 const Container = styled.div`
