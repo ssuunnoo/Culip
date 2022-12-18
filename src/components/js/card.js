@@ -1,12 +1,12 @@
 import React, {Component} from 'react';
 import styled from 'styled-components';
 import '../css/card.css';
-import data from '../../data/data.json';
+import data from '../../Data/data.json';
+import { Eng, Kor } from '../css/StyleText';
 
 class Week extends Component {
-    constructor(props){
-        super(props);
-    }
+   
+
     render() {
         const days = ['M', 'T', 'W', 'T', 'F', 'S', 'S'];
         const weekStyle = {
@@ -84,7 +84,7 @@ class Card extends Component {
         return (
             <Container>
                 <Profile>
-                    <Pic src={require("../../data/img/hodu.jpg")}/>
+                    <Pic src={require("../../Data/img/hodu.jpg")}/>
                     <Kor>{this.state.name}</Kor>
                     <Line></Line>
                 </Profile>
@@ -145,18 +145,7 @@ const lprimaryColor = "#91A096";
 const secondaryColor = "#FABB01";
 const backgroundColor = "#FFFCEB";
 
-const Eng = styled.text`
-    color: ${primaryColor};
-    font: 14px ITC Avant Garde Gothic Pro, sans-serif;
-    font-weight: 300;
-    line-height: 22px;
-`;
-const Kor = styled.text`
-    color: ${primaryColor};
-    font: 16px Pretendard, sans-serif;
-    font-weight: 400;
-    line-height: 24px;
-`;
+
 const Line = styled.hr`
     width: 211px;
     height: 2px;
@@ -175,6 +164,7 @@ const Container = styled.div`
     grid-template-rows: 150px 101px 60px 112px 1fr;
     height: 558px;
     width: 212px;
+    margin-right: 20px;
 `;
 
 const Profile = styled.div`
