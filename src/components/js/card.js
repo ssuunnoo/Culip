@@ -1,12 +1,11 @@
 import React, {Component} from 'react';
 import styled from 'styled-components';
 import '../css/card.css';
-import data from '../../Data/data.json';
+import data from '../../data/data.json';
 import { Eng, Kor } from '../css/StyleText';
 
 class Week extends Component {
    
-
     render() {
         const days = ['M', 'T', 'W', 'T', 'F', 'S', 'S'];
         const weekStyle = {
@@ -20,7 +19,7 @@ class Week extends Component {
                     //0: Future, 1: Today, 2: Pass, 3: Fail, 4: Rest, 5: Late
                     Object.entries(days).map(([key, value]) => {
                         return(
-                            <Day day={value} check={data[this.props.name]['check'][key]}/>
+                            <Day day={value} check={data[this.props.name]['check'][key]-'0'}/>
                         )
                     })
                 }
@@ -84,7 +83,7 @@ class Card extends Component {
         return (
             <Container>
                 <Profile>
-                    <Pic src={require("../../Data/img/hodu.jpg")}/>
+                    <Pic src={require("../../data/img/hodu.jpg")}/>
                     <Kor>{this.state.name}</Kor>
                     <Line></Line>
                 </Profile>
@@ -164,7 +163,6 @@ const Container = styled.div`
     grid-template-rows: 150px 101px 60px 112px 1fr;
     height: 558px;
     width: 212px;
-    margin-right: 20px;
 `;
 
 const Profile = styled.div`
