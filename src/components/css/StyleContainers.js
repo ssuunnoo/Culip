@@ -20,22 +20,19 @@ const WholeScreenContainer = styled.div`
 `;
 
 const MainScreenContainer = styled.div`
-  padding-left: 40px;
-  padding-right: 92px;
+  padding: 0px 92px 0px 40px;
   width: 100%;
-
 `;
 
 const HeaderContainer = styled.div`
-
   display: flex;
   padding-top: 80px;
   position: relative;
-
 `;
 
 const BodyContainer = styled.div`
   display: flex;
+  justify-content: space-between;
   align-items: center;
   height: 80%;
 `;
@@ -43,10 +40,8 @@ const BodyContainer = styled.div`
 const BoardContainer = styled.div`
   border: 2px solid ${primary};
   border-radius: 1.5em;
-  width: 212px;
+  width: 204px;
   height: 558px;
-  margin-right: 40px;
-  margin-left: 20px;
   display: flex;
   align-items: center;
   justify-content: center;

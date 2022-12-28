@@ -15,12 +15,12 @@ import Board from "../CommunityComponents/Board";
 import Card from "../card";
 import logo from "../../../assets/logo.png"
 
-import { EngPret } from '../../css/StyleText';
+import { Eng } from '../../css/StyleText';
 
 const Community = () => {
 
   const [ board, setBoard ] = useState('Rankings');
-  console.log("TESt")
+  console.log("Test")
 
   return (
     <WholeScreenContainer>
@@ -33,9 +33,9 @@ const Community = () => {
                 <Header2>Nov. 19, 2020</Header2>
           </HeaderTextContainer>
           <HeaderButtonContainer>
-                <NavButton><EngPret>Rankings</EngPret></NavButton>
-                <NavButton><EngPret>Announcement</EngPret></NavButton>
-                <NavButton><EngPret>Settings</EngPret></NavButton>
+                <NavButton>Rankings</NavButton>
+                <NavButton>Announcement</NavButton>
+                <NavButton>Settings</NavButton>
                 <img  src={logo} style={{height: '32px'} } alt='logo'/>
           </HeaderButtonContainer>
         </HeaderContainer>
@@ -45,7 +45,7 @@ const Community = () => {
           <Card name="호두"/>
           <Card name="호두"/>
           <Card name="호두"/>
-          <Board />
+          <Board/>
         </BodyContainer>
       </MainScreenContainer>
     </WholeScreenContainer>
@@ -53,5 +53,3 @@ const Community = () => {
 };
 //
 export default Community;
-
-
