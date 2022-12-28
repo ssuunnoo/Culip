@@ -2,5 +2,6 @@ body {
     background: #FFFCEB;
     font-family: Futura PT;
     font-style: bold;
+    overflow: hidden;
+    margin: 0;
 }
-
