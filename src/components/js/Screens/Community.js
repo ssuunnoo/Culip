@@ -15,17 +15,18 @@ import Board from "../CommunityComponents/Board";
 import Card from "../card";
 import logo from "../../../assets/logo.png"
 
+import ChangePngColor from "../../css/changePngColor";
+
 import { Eng } from '../../css/StyleText';
 
 const Community = () => {
 
   const [ board, setBoard ] = useState('Rankings');
-  console.log("Test")
 
   return (
     <WholeScreenContainer>
       <GlobalStyle />
-      <PageButton> {">"} </PageButton>
+      <PageButton><ChangePngColor background = '#FFFCEB'></ChangePngColor></PageButton>
       <MainScreenContainer>
         <HeaderContainer>
           <HeaderTextContainer>
@@ -53,3 +54,5 @@ const Community = () => {
 };
 //
 export default Community;
+
+//99, 48, 358, 95, 106, 101
