@@ -23,10 +23,21 @@ const Community = () => {
 
   const [ board, setBoard ] = useState('Rankings');
 
+  const rankingHandler = () => {
+    setBoard('Rankings')
+  }
+  const announcementHandler = () => {
+    setBoard('Announcement')
+  }
+  const settingsHandler = () => {
+    setBoard('Settings')
+  }
+  console.log(board)
   return (
     <WholeScreenContainer>
       <GlobalStyle />
-      <PageButton><ChangePngColor background = '#FFFCEB'></ChangePngColor></PageButton>
+      {/* <PageButton><ChangePngColor background = '#FFFCEB'></ChangePngColor></PageButton> */}
+      <PageButton>{">"}</PageButton>
       <MainScreenContainer>
         <HeaderContainer>
           <HeaderTextContainer>
@@ -34,9 +45,9 @@ const Community = () => {
                 <Header2>Nov. 19, 2020</Header2>
           </HeaderTextContainer>
           <HeaderButtonContainer>
-                <NavButton>Rankings</NavButton>
-                <NavButton>Announcement</NavButton>
-                <NavButton>Settings</NavButton>
+                <NavButton onClick={rankingHandler}>Rankings</NavButton>
+                <NavButton onClick={announcementHandler}>Announcement</NavButton>
+                <NavButton onClick={settingsHandler}>Settings</NavButton>
                 <img  src={logo} style={{height: '32px'} } alt='logo'/>
           </HeaderButtonContainer>
         </HeaderContainer>
@@ -46,7 +57,7 @@ const Community = () => {
           <Card name="호두"/>
           <Card name="호두"/>
           <Card name="호두"/>
-          <Board/>
+          <Board current = {board} />
         </BodyContainer>
       </MainScreenContainer>
     </WholeScreenContainer>

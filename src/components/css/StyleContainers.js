@@ -1,15 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 
-export {
-  WholeScreenContainer,
-  MainScreenContainer,
-  HeaderContainer,
-  BodyContainer,
-  BoardContainer,
-  HeaderTextContainer,
-  HeaderButtonContainer
-};
+
 
 const primary = "#394B3F";
 const secondary = "#FABB01";
@@ -56,3 +48,28 @@ const HeaderButtonContainer = styled.div`
     position: absolute;
     right: 0;
 `;
+
+const BoardDividingLine = styled.div`
+    border-top: 2px solid ${primary};
+    width: 100%;
+    margin: 35px 0px ;
+`
+
+const EachRankingContainer = styled.div`
+
+    display: flex;
+    align-items: center;
+    margin-bottom: 3px;
+
+`
+export {
+  WholeScreenContainer,
+  MainScreenContainer,
+  HeaderContainer,
+  BodyContainer,
+  BoardContainer,
+  HeaderTextContainer,
+  HeaderButtonContainer,
+  BoardDividingLine,
+  EachRankingContainer
+};

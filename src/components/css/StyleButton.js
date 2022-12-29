@@ -22,7 +22,10 @@ const NavButton = styled.button`
     font: normal 700 15px/22px ITC Avant Garde Gothic Pro, sans-serif;
 
     &:hover{
-        color: '#FFF';
+        color: ${secondary};
+    }
+    &:active{
+        color: ${background};
     }
 `
 

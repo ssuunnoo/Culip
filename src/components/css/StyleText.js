@@ -24,21 +24,21 @@ const Header2 = styled.p`
 
 `
 
-const Eng = styled.text`
+const Eng = styled.p`
     color: ${primary};
     font: 14px ITC Avant Garde Gothic Pro, sans-serif;
     font-weight: 300;
     line-height: 22px;
 `;
 
-const Kor = styled.text`
+const Kor = styled.p`
     color: ${primary};
     font: 16px Pretendard, sans-serif;
     font-weight: 400;
     line-height: 24px;
 `;
 
-const EngPret = styled.text`
+const EngPret = styled.p`
     color: ${primary};
     font: 15px Pretendard, sans-serif;
     font-weight: 400;
@@ -46,4 +46,24 @@ const EngPret = styled.text`
     font-weight: 900;
 `;
 
-export { Header1, Header2, Eng, Kor, EngPret } 
+const BoardHeader = styled.p`
+    color: ${primary};
+    font: 24px ITC Avant Garde Gothic Pro, sans-serif;
+    margin-bottom: 30px;
+`
+
+const ERanking = styled.p`
+    color: ${primary};
+    font: 16px ITC Avant Garde Gothic Pro, sans-serif;
+    line-height: 22px;
+    margin-right: 20px;
+`
+
+const KRanking = styled.p`
+    color: ${primary};
+    font: 16px ITC Avant Garde Gothic Pro, sans-serif;
+    line-height: 18px;
+    letter-spacing: 0.1px;
+`
+
+export { Header1, Header2, Eng, Kor, EngPret, BoardHeader, ERanking, KRanking } 
