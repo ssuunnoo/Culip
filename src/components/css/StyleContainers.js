@@ -12,7 +12,7 @@ const WholeScreenContainer = styled.div`
 `;
 
 const MainScreenContainer = styled.div`
-  padding: 0px 92px 0px 40px;
+  padding: 0px 88px 0px 40px;
   width: 100%;
 `;
 
