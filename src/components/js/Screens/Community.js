@@ -61,7 +61,7 @@ const Community = () => {
           </HeaderButtonContainer>
         </HeaderContainer>
         <BodyContainer>
-          {Object.entries(data).map(([key, value]) => {
+          {Object.keys(data).map(key => {
             return(
               <Card name={key} />
             )
