@@ -2,6 +2,6 @@ body {
     background: #FFFCEB;
     font-family: Futura PT;
     font-style: bold;
-    overflow: hidden;
+    overflow-y: hidden;
     margin: 0;
 }
