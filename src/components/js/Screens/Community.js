@@ -16,6 +16,7 @@ import Card from "../card";
 import logo from "../../../assets/logo.png"
 import arrow from "../../../assets/arrow.svg"
 
+import data from "../../../data/data.json";
 
 import {	Link }	from "react-router-dom";
 
@@ -60,11 +61,11 @@ const Community = () => {
           </HeaderButtonContainer>
         </HeaderContainer>
         <BodyContainer>
-          <Card name="호두"/>
-          <Card name="호두"/>
-          <Card name="호두"/>
-          <Card name="호두"/>
-          <Card name="호두"/>
+          {Object.entries(data).map(([key, value]) => {
+            return(
+              <Card name={key} />
+            )
+          })}
           <Board current = {board} />
         </BodyContainer>
       </MainScreenContainer>
