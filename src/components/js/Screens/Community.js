@@ -14,6 +14,10 @@ import GlobalStyle from "../../css/global-style";
 import Board from "../CommunityComponents/Board";
 import Card from "../card";
 import logo from "../../../assets/logo.png"
+import arrow from "../../../assets/mypageArrow.png"
+
+
+import {	Link }	from "react-router-dom";
 
 import ChangePngColor from "../../css/changePngColor";
 
@@ -35,9 +39,13 @@ const Community = () => {
   console.log(board)
   return (
     <WholeScreenContainer>
-      <GlobalStyle />
-      {/* <PageButton><ChangePngColor background = '#FFFCEB'></ChangePngColor></PageButton> */}
-      <PageButton>{">"}</PageButton>
+      <GlobalStyle />      
+      <Link to="/mypage">
+        <PageButton>
+          <img  src={arrow} style={{height: '32px'} } alt='arrow'/>
+        </PageButton> 
+      </Link>
+     
       <MainScreenContainer>
         <HeaderContainer>
           <HeaderTextContainer>

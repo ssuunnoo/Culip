@@ -32,12 +32,17 @@ const NavButton = styled.button`
 const PageButton = styled.button`
     height: 100vh;
     border: none;
-    width: 3%;
+    width: 48px;
     background-color: ${primary};
     color: ${background};
     font-weight: 900;
     margin: 0;
     font-size: x-large;
+
+    &:hover{
+        background-color: ${primary};
+        opacity: 0.9;
+    }
 
 `
 
