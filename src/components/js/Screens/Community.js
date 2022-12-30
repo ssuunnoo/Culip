@@ -14,7 +14,7 @@ import GlobalStyle from "../../css/global-style";
 import Board from "../CommunityComponents/Board";
 import Card from "../card";
 import logo from "../../../assets/logo.png"
-import arrow from "../../../assets/mypageArrow.png"
+import arrow from "../../../assets/arrow.svg"
 
 
 import {	Link }	from "react-router-dom";
@@ -42,7 +42,7 @@ const Community = () => {
       <GlobalStyle />      
       <Link to="/mypage">
         <PageButton>
-          <img  src={arrow} style={{height: '32px'} } alt='arrow'/>
+          <img  src={arrow} alt='arrow'/>
         </PageButton> 
       </Link>
      
