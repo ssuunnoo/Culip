@@ -36,7 +36,7 @@ class Day extends Component{
             height: "28px",
             borderRadius: "50%",
 
-            fontFamily: 'itc-avant-grade-gothic, sans-serif',
+            fontFamily: 'itc-avant-garde-gothic-pro, sans-serif',
             fontStyle: "normal",
             fontWeight: 300,
             fontSize: "14px",

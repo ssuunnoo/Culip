@@ -93,7 +93,7 @@ const Select = styled.button`
 
     background-color: rgba(0,0,0,0);
     color: ${primary};
-    font: 14px ITC Avant Garde Gothic Pro, sans-serif;
+    font: 14px itc-avant-garde-gothic-pro, sans-serif;
     font-weight: 300;
     line-height: 22px;
 `;
@@ -134,7 +134,7 @@ const Li = styled.li`
     width: 100%;
     color: ${background};
     background-color: ${lprimary};
-    font: 14px ITC Avant Garde Gothic Pro, sans-serif;
+    font: 14px itc-avant-garde-gothic-pro, sans-serif;
     font-weight: 300;
     line-height: 22px;
     padding: 0 0 0 5px;
