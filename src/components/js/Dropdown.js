@@ -96,6 +96,8 @@ const Select = styled.button`
     font: 14px itc-avant-garde-gothic-pro, sans-serif;
     font-weight: 300;
     line-height: 22px;
+
+    cursor: pointer;
 `;
 
 const Menu = styled.div`
@@ -142,4 +144,5 @@ const Li = styled.li`
     &:hover{
         background-color: ${primary};
     }
+    cursor: pointer;
 `
