@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import '../css/card.css';
 import data from '../../data/data.json';
 import { Eng, Kor } from '../css/StyleText';
+import {Dropdown} from './Dropdown';
 
 class Week extends Component {
    
@@ -96,6 +97,7 @@ class Card extends Component {
                     <Line></Line>
                 </Check>
                 <Options>
+                    <Dropdown></Dropdown>
                     <Line></Line>
                 </Options>
                 <Remain>
@@ -195,7 +197,6 @@ const TextContainer = styled.div`
 
 const Options = styled.div`
     position: relative;
-    display: block;
 `;
 
 const Remain = styled.div`
